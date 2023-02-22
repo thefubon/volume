@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       title: 'ЖК Сердце столицы | Volume',
       titleTemplate: '%s',
       meta: [
+        { name: 'robots', content: 'noindex, nofollow' },
         { name: 'description', content: '' },
         { name: 'keywords', content: '' },
         { name: 'author', content: '' },
