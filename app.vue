@@ -16,7 +16,7 @@
 
     <h2 class="project_heading project__content">Планировка</h2>
 
-    <div class="project_layout">
+    <div class="project_layout group">
       <img class="project_layout__img" src="/img/layout/layout_img.png" alt="">
       <img class="project_layout__shadow" src="/img/layout/layout_img.png" alt="">
     </div>
@@ -62,14 +62,17 @@
     @apply relative h-full flex justify-start items-start
   }
   .project_layout__img {
-    @apply absolute top-0 right-0 w-[80%] z-10
+    @apply absolute top-0 right-0 w-[80%] z-10 group-hover:-top-4 duration-300
   }
   .project_layout__shadow {
-    @apply w-[80%] mt-[10%] opacity-10
+    @apply w-[80%] mt-[10%] relative opacity-10 top-0 group-hover:top-4 duration-300
   }
 
   .project_process-grid {
     @apply grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 md:gap-20
+  }
+  .project_process-grid img {
+    @apply hover:scale-[1.05] duration-300
   }
 
   .project_process-single {
