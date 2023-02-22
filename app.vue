@@ -1,8 +1,6 @@
 <template>
   <div class="container project_container py-16">
     
-    <img src="/img/demo.png" alt="" srcset="">
-    
     <div class="arrow_bottom project__content">
       
       <svg class="w-[24px] h-[100px] sm:h-[160px] md:h-[295px]" viewBox="0 0 24 295" fill="none" xmlns="http://www.w3.org/2000/svg">
