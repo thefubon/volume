@@ -18,23 +18,26 @@
 
     <h2 class="project_heading project__content">Планировка</h2>
 
-    <img class="w-full" src="/img/layout.png" alt="">
+    <div class="project_layout">
+      <img class="project_layout__img" src="/img/layout/layout_img.png" alt="">
+      <img class="project_layout__shadow" src="/img/layout/layout_img.png" alt="">
+    </div>
 
     <h2 class="project_heading project__content">Процесс</h2>
 
     <div class="project_process-grid">
-      <img src="/img/process/process_1.png" alt="">
-      <img src="/img/process/process_2.png" alt="">
-      <img src="/img/process/process_3.png" alt="">
-      <img src="/img/process/process_4.png" alt="">
-      <img src="/img/process/process_5.png" alt="">
-      <img src="/img/process/process_6.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_1.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_2.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_3.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_4.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_5.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_6.png" alt="">
     </div>
 
     <div class="project_process-single">
-      <img src="/img/process/process_7.png" alt="">
-      <img src="/img/process/process_8.png" alt="">
-      <img src="/img/process/process_9.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_7.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_8.png" alt="">
+      <img class="w-full h-full" src="/img/process/process_9.png" alt="">
     </div>
 
   </div>
@@ -55,6 +58,16 @@
 
   .project_heading {
     @apply text-2xl md:text-5xl pt-12 sm:pt-32 md:pt-56 pb-16 sm:pb-24 md:pb-32
+  }
+
+  .project_layout {
+    @apply relative h-full flex justify-start items-start
+  }
+  .project_layout__img {
+    @apply absolute top-0 right-0 w-[80%] z-10
+  }
+  .project_layout__shadow {
+    @apply w-[80%] mt-[10%] opacity-10
   }
 
   .project_process-grid {
